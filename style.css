@@ -7390,3 +7390,62 @@ html, body {
     display: none !important;
   }
 }
+
+
+/* =========================================================================
+   MOBILE TEXT VISIBILITY & CONTRAST ENHANCEMENTS (≤767px & ≤479px)
+   ========================================================================= */
+
+@media (max-width: 767px) {
+  /* High contrast pure white for all primary headlines, titles, and body copy */
+  h1, h2, h3, h4, h5, h6,
+  .hero-heading, .hero-title,
+  .services__heading, .about-heading, .why-title, .bridal-title,
+  .cat-title, .artists-title, .trans-title, .pkg-title,
+  .test-title, .booking-title, .contact-title,
+  .card__title, .service-card__title, .artist-card__name,
+  .pkg-card__title, .booking-info-heading, .contact-card-heading {
+    color: #FFFFFF !important;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.75) !important;
+  }
+
+  /* Body copy, descriptions, and list values */
+  p, span, label, li,
+  .hero-desc, .hero-subtitle,
+  .services__desc, .about-subtitle, .why-subtitle, .bridal-subtitle,
+  .cat-subtitle, .artists-subtitle, .trans-subtitle, .pkg-subtitle,
+  .test-subtitle, .booking-subtitle, .contact-subtitle,
+  .booking-info-value, .contact-info-value, .contact-quick-value,
+  .stat-item__label, .pkg-feature-text, .test-quote {
+    color: #E2E8F0 !important;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6) !important;
+  }
+
+  /* Accent titles, numbers, and gold highlights */
+  .hero-title__em, .services__heading em, .why-title em,
+  .artists-title em, .pkg-title em, .booking-title-word--gold,
+  .contact-title-word--gold, .mm-num, .booking-info-label,
+  .contact-info-label, .contact-quick-label, .booking-label {
+    color: #D4AF37 !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8) !important;
+  }
+
+  /* Form inputs text and placeholder contrast */
+  input, select, textarea,
+  .booking-input, .booking-select, .booking-textarea {
+    color: #FFFFFF !important;
+    background: rgba(24, 24, 24, 0.92) !important;
+    border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  }
+  input::placeholder, textarea::placeholder {
+    color: rgba(226, 232, 240, 0.65) !important;
+  }
+
+  /* Card content visibility overlays */
+  .service-card__body, .artist-card__info, .pkg-card__inner, .contact-card {
+    position: relative !important;
+    z-index: 10 !important;
+    background: rgba(18, 18, 18, 0.88) !important;
+    border-radius: 20px !important;
+  }
+}
